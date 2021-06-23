@@ -46,29 +46,5 @@ rocTX API:
 
 ## To build and run test
 ```
- - ROCm is required
- 
- - Python modules requirements: CppHeaderParser, argparse.
-  To install:
-  sudo pip install CppHeaderParser argparse
-
- - CLone development branch of roctracer:
-  git clone -b amd-master https://github.com/ROCm-Developer-Tools/roctracer
-
- - Set environment:
-  export CMAKE_PREFIX_PATH=/opt/rocm
- - To use custom HIP version:
-  export HIP_PATH=/opt/rocm/hip
-
- - To build roctracer library:
-  export CMAKE_BUILD_TYPE=<debug|release> # release by default
-  cd <your path>/roctracer && BUILD_DIR=build HIP_VDI=1 ./build.sh
-
- - To build and run test:
-  run.sh
-  
- - To install:
-  make install
- or
-  make package && dpkg -i *.deb
+ Please follow the instructions mentioned @ https://rocmdocs.amd.com/en/latest/Installation_Guide/Tools-Installation.html
 ```
